@@ -1,0 +1,70 @@
+.section {
+  border-top: 1px solid var(--color-border);
+  padding: clamp(56px, 7vw, 110px) 0;
+}
+
+.panel {
+  border: 1px solid var(--color-border);
+  background: linear-gradient(160deg, #121417, #0b0c0e);
+  padding: clamp(28px, 4vw, 72px);
+}
+
+.title {
+  margin: 0;
+  max-width: 20ch;
+  font-size: clamp(28px, 3.4vw, 46px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.body {
+  margin: 26px 0 0;
+  max-width: 56ch;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 1px;
+  margin-top: clamp(36px, 4.5vw, 64px);
+}
+
+.cell {
+  flex: 1 1 150px;
+  padding: clamp(18px, 2vw, 26px);
+  border: 1px solid var(--color-border);
+  background: #0e1012;
+  transition: all 0.4s ease;
+}
+
+.cell:hover {
+  border-color: var(--color-gold);
+  background: #141619;
+}
+
+.marker {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: var(--color-border-hover);
+  margin-bottom: 22px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--color-platinum);
+}
+
+.desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--color-border-hover);
+}

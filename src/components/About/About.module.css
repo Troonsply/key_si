@@ -1,0 +1,76 @@
+.section {
+  border-top: 1px solid var(--color-border);
+  padding: clamp(56px, 7vw, 110px) 0;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(32px, 6vw, 96px);
+}
+
+.heading {
+  flex: 0 1 300px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(30px, 3.6vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--color-text-primary);
+}
+
+.content {
+  flex: 1 1 460px;
+  min-width: 0;
+  max-width: 720px;
+}
+
+.lead {
+  margin: 0;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.5;
+  color: var(--color-platinum);
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+}
+
+.body {
+  margin: 28px 0 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  text-wrap: pretty;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.tag {
+  padding: 11px 18px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--color-silver);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.tag:hover {
+  border-color: var(--color-border-hover);
+  background: var(--color-surface-hover);
+}
+
+.tagAccent {
+  color: var(--color-gold);
+}
+
+.tagAccent:hover {
+  border-color: var(--color-gold);
+}
