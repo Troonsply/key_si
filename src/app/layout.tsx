@@ -5,9 +5,9 @@ import "@fontsource/ibm-plex-mono/500.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Имя Фамилия — Frontend Developer & Team Lead",
+  title: "Катя Сяврис — Developer & Team Lead",
   description:
-    "Опытная frontend-разработчица и Team Lead. Разрабатываю интерфейсы, выстраиваю процессы и помогаю командам создавать продукты эффективнее.",
+    "Опытная разработчица и Team Lead. Разрабатываю интерфейсы, выстраиваю процессы и помогаю командам создавать продукты эффективнее.",
 };
 
 export default function RootLayout({

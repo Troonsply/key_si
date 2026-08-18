@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import styles from "./ImagePlaceholder.module.css";
 
 type ImagePlaceholderProps = {
   label: string;
-  src?: string;
+  src?: string | StaticImageData;
   alt?: string;
   className?: string;
 };

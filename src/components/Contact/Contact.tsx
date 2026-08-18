@@ -6,7 +6,6 @@ const LINKS = [
   { label: "Email", href: "mailto:hello@example.com" },
   { label: "GitHub", href: "#contact" },
   { label: "LinkedIn", href: "#contact" },
-  { label: "Хабр", href: "#contact", accent: true },
 ];
 
 export function Contact() {
@@ -29,7 +28,7 @@ export function Contact() {
           <a
             key={link.label}
             href={link.href}
-            className={`${styles.link} ${link.accent ? styles.linkAccent : ""}`}
+            className={`${styles.link} ${styles.linkAccent ?? ""}`}
           >
             {link.label}
           </a>

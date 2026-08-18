@@ -5,7 +5,6 @@ import { Skills } from "@/components/Skills/Skills";
 import { Projects } from "@/components/Projects/Projects";
 import { AISection } from "@/components/AISection/AISection";
 import { BeyondCode } from "@/components/BeyondCode/BeyondCode";
-import { Writing } from "@/components/Writing/Writing";
 import { Contact } from "@/components/Contact/Contact";
 import { Footer } from "@/components/Footer/Footer";
 
@@ -20,7 +19,6 @@ export default function Home() {
         <Projects />
         <AISection />
         <BeyondCode />
-        <Writing />
         <Contact />
       </main>
       <Footer />

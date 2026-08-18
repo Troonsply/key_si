@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/Button/Button";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder/ImagePlaceholder";
 import { Reveal } from "@/components/ui/Reveal/Reveal";
+import heroImage from "./hero.jpeg";
 import styles from "./Hero.module.css";
 
-const META_TAGS = ["FRONTEND", "TEAM LEAD", "AI", "SCRUM"];
+const META_TAGS = ["DEVELOPMENT", "TEAM LEAD", "AI", "SCRUM"];
 
 export function Hero() {
   return (
@@ -12,12 +13,12 @@ export function Hero() {
         <Reveal className={styles.kicker}>
           <span className={styles.kickerLine} />
           <span className="mono-label" style={{ fontSize: 11 }}>
-            FRONTEND · TEAM LEAD · AI
+            TEAM LEAD · AI
           </span>
         </Reveal>
 
         <Reveal as="h1" delay={0.05} className={`${styles.title} gradient-text`}>
-          Frontend Developer
+         Developer
           <br />
           &amp; Team Lead
         </Reveal>
@@ -46,8 +47,9 @@ export function Hero() {
         <div className={styles.portraitAccent} aria-hidden />
         <div className={styles.portraitFrame}>
           <ImagePlaceholder
-            label="Портрет — вертикальный кадр, естественный свет"
-            className={styles.portraitImage}
+              src={heroImage}
+              label="Портрет — вертикальный кадр, естественный свет"
+              className={styles.portraitImage}
           />
         </div>
         <div className={styles.metaLabels}>

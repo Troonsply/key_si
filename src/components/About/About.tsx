@@ -3,9 +3,8 @@ import styles from "./About.module.css";
 
 const COMPANIES = [
   { name: "Газпромнефть", accent: false },
-  { name: "Московская биржа", accent: false },
+  { name: "Московская биржа", accent: true },
   { name: "ТПК", accent: false },
-  { name: "Хабр", accent: true },
 ];
 
 export function About() {
@@ -23,12 +22,11 @@ export function About() {
 
         <div className={styles.content}>
           <Reveal as="p" className={styles.lead}>
-            Опытная frontend-разработчица и Team Lead, которая умеет работать
+            Опытная разработчица и Team Lead, которая умеет работать
             не только с кодом, но и с продуктом, бизнесом и командой.
           </Reveal>
           <Reveal as="p" delay={0.05} className={styles.body}>
-            Работала над проектами для крупных компаний. Пишет технические
-            статьи на Хабр. Хорошо ориентируется в бизнес-процессах и имеет
+            Работала над проектами для крупных компаний.  Хорошо ориентируется в бизнес-процессах и имеет
             опыт их выстраивания внутри команд. Отдельное направление опыта —
             внедрение Scrum с нуля и развитие инженерных процессов.
           </Reveal>
